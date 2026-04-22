@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tool Assistant Practice</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="assistant-panel" aria-labelledby="app-title">
+        <div class="brand-row">
+          <div class="mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div>
+            <p class="eyebrow">Tool Assistant</p>
+            <h1 id="app-title">Ask for weather, math, or notes.</h1>
+          </div>
+        </div>
+
+        <form id="assistant-form" class="composer">
+          <label class="sr-only" for="question">Question</label>
+          <input
+            id="question"
+            name="question"
+            type="text"
+            autocomplete="off"
+            placeholder="Try: weather in Seattle, 19 * 7, notes about debugging"
+          />
+          <button type="submit">Ask</button>
+        </form>
+
+        <div class="quick-actions" aria-label="Example prompts">
+          <button type="button" data-prompt="What is the weather in Seattle?">Weather</button>
+          <button type="button" data-prompt="What is 19 * 7?">Math</button>
+          <button type="button" data-prompt="Search notes for debugging">Notes</button>
+        </div>
+
+        <section class="answer" aria-live="polite">
+          <p class="label">Answer</p>
+          <p id="answer-text">Ask a question to watch the tool flow.</p>
+        </section>
+      </section>
+
+      <aside class="trace-panel" aria-labelledby="trace-title">
+        <h2 id="trace-title">Tool trace</h2>
+        <ol id="trace-list">
+          <li>Waiting for a question.</li>
+        </ol>
+      </aside>
+    </main>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

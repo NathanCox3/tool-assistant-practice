@@ -8,6 +8,15 @@ A tiny beginner-friendly tool-calling assistant with three tools:
 
 The terminal output shows what the model chose and what the local tool returned.
 
+## Public Web App
+
+Open the public webpage:
+
+https://nathancox3.github.io/tool-assistant-practice/
+
+The web version runs in the browser, so it does not expose an OpenAI API key.
+It demonstrates the same tool flow with live weather, calculator, and notes.
+
 ## Setup
 
 ```bash
