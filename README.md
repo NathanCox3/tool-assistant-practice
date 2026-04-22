@@ -14,6 +14,12 @@ Open the public webpage:
 
 https://nathancox3.github.io/tool-assistant-practice/
 
+On Windows, you can also double-click:
+
+```text
+Open Public Web App.bat
+```
+
 The web version runs in the browser, so it does not expose an OpenAI API key.
 It demonstrates the same tool flow with live weather, calculator, and notes.
 
