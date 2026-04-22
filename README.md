@@ -19,6 +19,12 @@ Then put your OpenAI API key in `.env`.
 
 ## Run
 
+On Windows, you can double-click:
+
+```text
+Run Tool Assistant.bat
+```
+
 Interactive mode:
 
 ```bash
